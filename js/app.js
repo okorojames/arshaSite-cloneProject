@@ -15,3 +15,8 @@ toggle.addEventListener("click", function () {
   toggle.classList.toggle("nav-toggle");
   navLink.classList.toggle("nav-toggle");
 });
+// preloader
+$(window).on("load", function () {
+  $(".preloader-dots").delay(2600).fadeOut();
+  $(".preloader").delay(2800).fadeOut();
+});
