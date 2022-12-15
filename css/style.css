@@ -170,4 +170,7 @@ nav {
   .hamburger {
     margin-left: 50px;
   }
+  .nav-cta {
+    display: none;
+  }
 }
