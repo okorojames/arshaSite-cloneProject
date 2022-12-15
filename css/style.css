@@ -1,3 +1,7 @@
+/****************/
+/* FONT FAMILY */
+/**************/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap");
 /***************/
 /* COLOR VARS */
 /*************/
@@ -18,3 +22,146 @@
   --green-two: #18d26e;
   --red-one: #ed3c0d;
 }
+/***********************/
+/* GENERAL RESETTINGS */
+/*********************/
+.form-control:focus,
+textarea:focus,
+input,
+input:focus {
+  box-shadow: 0 0 0 1px transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden !important;
+}
+/***********/
+/* HEADER */
+/*********/
+header {
+  position: relative;
+  height: 80vh;
+  background: var(--main-three);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--light-one);
+}
+/************/
+/* NAV BAR */
+/**********/
+.nav-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 6%;
+  max-width: 88vw;
+  margin: 0 auto;
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo h3 {
+  font-size: 2rem;
+  font-weight: 600 !important;
+}
+/* mobile toggle hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-left: 115px;
+}
+.hamburger div {
+  background-color: var(--light-three);
+  height: 3px;
+  width: 45px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: all 0.4s ease-in-out;
+}
+.hamburger div:last-child {
+  margin-bottom: 0;
+}
+/* nav links */
+.nav-links {
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+.nav-links a:visited,
+.nav-links a:link {
+  padding: 0 0.8rem;
+  text-decoration: none;
+  color: var(--light-one);
+  transition: all 0.3s ease-in-out;
+}
+.nav-active {
+  color: var(--blue-one) !important;
+}
+.nav-cta:link,
+.nav-cta:visited {
+  text-decoration: none;
+  color: var(--light-one);
+  background: transparent;
+  border-radius: 20rem;
+  box-shadow: 0 0 0 1.5px var(--blue-two);
+  padding: 8px 16px;
+  transition: all 0.5s ease-in-out;
+}
+.nav-cta:hover,
+.nav-cta:active {
+  background: var(--blue-one);
+  color: var(--light-three);
+}
+
+/******************************/
+/* toggle style called on js */
+/****************************/
+.nav-toggle .burger-one {
+  transform: rotate(-45deg) translate(-2px, 18px);
+}
+.nav-toggle .burger-two {
+  opacity: 0;
+}
+.nav-toggle .burger-three {
+  transform: rotate(45deg) translate(4px, -12px);
+}
+.nav-toggle.nav-links {
+  left: 4%;
+}
+/******************/
+/* MEDIA SCREENS */
+/****************/
+@media screen and (max-width: 980px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    background: var(--light-two);
+    color: var(--main-three) !important;
+    left: 1000px;
+    right: 4%;
+    height: 100vh;
+    top: 20%;
+    z-index: 999;
+  }
+  .nav-links a:first-child {
+    margin-top: 1.8rem;
+  }
+}
+/* 476 */
