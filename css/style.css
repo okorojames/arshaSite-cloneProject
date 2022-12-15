@@ -153,7 +153,7 @@ nav {
     align-items: center;
     gap: 12px;
     position: fixed;
-    background: var(--light-two);
+    background: rgba(132, 132, 132, 0.16);
     color: var(--main-three) !important;
     left: 1000px;
     right: 4%;
