@@ -139,7 +139,7 @@ nav {
   transform: rotate(45deg) translate(4px, -12px);
 }
 .nav-toggle.nav-links {
-  left: 4%;
+  left: 10%;
 }
 /******************/
 /* MEDIA SCREENS */
@@ -155,14 +155,12 @@ nav {
     position: fixed;
     background: rgba(132, 132, 132, 0.16);
     color: var(--main-three) !important;
+    border-radius: 8px;
     left: 1000px;
-    right: 4%;
-    height: 100vh;
+    right: 10%;
+    padding: 1.8rem 0;
     top: 20%;
     z-index: 999;
-  }
-  .nav-links a:first-child {
-    margin-top: 1.8rem;
   }
 }
 /* 576 */
