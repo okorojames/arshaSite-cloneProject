@@ -81,7 +81,8 @@ nav {
 .hamburger {
   display: none;
   cursor: pointer;
-  margin-left: 115px;
+  margin-left: 200px;
+  transition: all 0.3s ease-in-out;
 }
 .hamburger div {
   background-color: var(--light-three);
@@ -164,4 +165,9 @@ nav {
     margin-top: 1.8rem;
   }
 }
-/* 476 */
+/* 576 */
+@media screen and (max-width: 576px) {
+  .hamburger {
+    margin-left: 50px;
+  }
+}
