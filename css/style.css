@@ -1,0 +1,20 @@
+/***************/
+/* COLOR VARS */
+/*************/
+:root {
+  --main-one: rgba(40, 58, 90, 0.9);
+  --main-two: #0c3c53;
+  --main-three: #37517e;
+  --light-one: #fff;
+  --light-two: rgba(255, 255, 255, 0.6);
+  --light-three: #f3f5fa;
+  --light-four: #ddd;
+  --dark-one: rgba(127, 137, 161, 0.25);
+  --dark-two: #848484;
+  --blue-one: #47b2e4;
+  --blue-two: #31a9e1;
+  --blue-three: #209dd8;
+  --green-one: #28a745;
+  --green-two: #18d26e;
+  --red-one: #ed3c0d;
+}
