@@ -2,6 +2,7 @@ const navLinks = document.querySelectorAll(".nav-links a");
 const navLink = document.querySelector(".nav-links");
 const toggle = document.querySelector(".hamburger");
 const logoZoom = document.querySelector(".logo-swipe-container");
+const aboutCont = document.querySelector(".about-container");
 navLinks.forEach((link) => {
   link.addEventListener("click", function () {
     navLinks.forEach((link) => {
@@ -54,6 +55,7 @@ const navWrap = document.querySelector(".nav-wrap");
 window.onscroll = function () {
   scrollFunction();
   zoomFunction();
+  zoomAbout();
 };
 
 function scrollFunction() {
@@ -70,5 +72,12 @@ function zoomFunction() {
     logoZoom.classList.add("zoom-up");
   } else {
     logoZoom.classList.remove("zoom-up");
+  }
+}
+function zoomAbout() {
+  if (document.body.scrollTop > 300) {
+    aboutCont.classList.add("anime-about");
+  } else {
+    aboutCont.classList.remove("anime-about");
   }
 }
