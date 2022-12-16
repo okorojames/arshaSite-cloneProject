@@ -38,6 +38,7 @@ body {
   position: relative;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden !important;
+  margin-bottom: 4%;
 }
 /**************/
 /* PRELOADER */
@@ -275,6 +276,25 @@ nav {
   to {
     transform: translateY(50px);
   }
+}
+/*********************/
+/* SWIPER SECTION */
+/********************/
+#logo-swipe {
+  padding: 1.5rem 0;
+  background: var(--light-four);
+}
+#logo-swipe .container {
+  flex-wrap: wrap !important;
+}
+#logo-swipe img {
+  height: 40px;
+  filter: grayscale(1);
+  transition: all 0.5s ease-in-out;
+}
+#logo-swipe img:hover {
+  transform: scale(1.15);
+  filter: grayscale(0);
 }
 /*********************/
 /********************/

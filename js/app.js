@@ -46,3 +46,23 @@ navDrop.addEventListener("mouseleave", function () {
 dropLink.addEventListener("mouseleave", function () {
   dropLink.classList.remove("drop-toggle");
 });
+//
+//
+// onscroll nav bg to change color
+const navWrap = document.querySelector(".nav-wrap");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    navWrap.style.backgroundColor = "rgba(51, 98, 160, 0.3)";
+    navWrap.style.paddingRight = "3rem";
+    navWrap.style.paddingLeft = "3rem";
+  } else {
+    navWrap.style.backgroundColor = "transparent";
+  }
+}
+
+//
+//
