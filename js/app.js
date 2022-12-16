@@ -30,3 +30,19 @@ let typed = new Typed(".hero-typed", {
   typeSpeed: "9",
   loop: true,
 });
+//
+// drop link mouse over toggle
+const dropLink = document.querySelector(".drop-links");
+const navDrop = document.querySelector(".nav-drop");
+navDrop.addEventListener("mouseover", function () {
+  dropLink.classList.add("drop-toggle");
+});
+dropLink.addEventListener("mouseover", function () {
+  dropLink.classList.add("drop-toggle");
+});
+navDrop.addEventListener("mouseleave", function () {
+  dropLink.classList.remove("drop-toggle");
+});
+dropLink.addEventListener("mouseleave", function () {
+  dropLink.classList.remove("drop-toggle");
+});
