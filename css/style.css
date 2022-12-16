@@ -280,11 +280,9 @@ nav {
     top: 20%;
     z-index: 999;
   }
-  .hero-row {
-    margin-top: 4.5rem;
-  }
   .hero-h2 {
     font-size: 2.4rem;
+    margin-top: -12%;
   }
   .hero-first-col {
     margin-bottom: 3rem;
@@ -295,6 +293,9 @@ nav {
 }
 /* 576 */
 @media screen and (max-width: 576px) {
+  header {
+    height: 120vh;
+  }
   .hamburger {
     margin-left: 50px;
   }
@@ -303,5 +304,17 @@ nav {
   }
   .hero-btn-row {
     flex-direction: column;
+  }
+}
+/* 476 */
+
+/* 375 */
+@media screen and (max-width: 376px) {
+  nav {
+    padding: 0.3rem 0;
+  }
+  .hero-h2 {
+    font-size: 1.8rem;
+    margin-top: 30%;
   }
 }
