@@ -1,6 +1,7 @@
 const navLinks = document.querySelectorAll(".nav-links a");
 const navLink = document.querySelector(".nav-links");
 const toggle = document.querySelector(".hamburger");
+const logoZoom = document.querySelector(".logo-swipe-container");
 navLinks.forEach((link) => {
   link.addEventListener("click", function () {
     navLinks.forEach((link) => {
@@ -52,6 +53,7 @@ dropLink.addEventListener("mouseleave", function () {
 const navWrap = document.querySelector(".nav-wrap");
 window.onscroll = function () {
   scrollFunction();
+  zoomFunction();
 };
 
 function scrollFunction() {
@@ -63,6 +65,10 @@ function scrollFunction() {
     navWrap.style.backgroundColor = "transparent";
   }
 }
-
-//
-//
+function zoomFunction() {
+  if (document.body.scrollTop > 80) {
+    logoZoom.classList.add("zoom-up");
+  } else {
+    logoZoom.classList.remove("zoom-up");
+  }
+}
