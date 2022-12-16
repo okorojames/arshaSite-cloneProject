@@ -262,7 +262,7 @@ nav {
 /******************/
 /* MEDIA SCREENS */
 /****************/
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 991px) {
   .hamburger {
     display: block;
   }
@@ -274,7 +274,7 @@ nav {
     background: rgba(51, 98, 160, 0.95);
     color: var(--main-three) !important;
     border-radius: 8px;
-    left: 1000px;
+    left: 9000px;
     right: 10%;
     padding: 1.8rem 0;
     top: 20%;
@@ -289,6 +289,9 @@ nav {
   .hero-first-col {
     margin-bottom: 3rem;
   }
+  .hero-btn-row {
+    justify-content: center;
+  }
 }
 /* 576 */
 @media screen and (max-width: 576px) {
@@ -297,5 +300,8 @@ nav {
   }
   .nav-cta {
     display: none;
+  }
+  .hero-btn-row {
+    flex-direction: column;
   }
 }
