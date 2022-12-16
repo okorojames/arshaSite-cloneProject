@@ -98,7 +98,8 @@ body {
 /*********/
 header {
   position: relative;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   background: var(--main-three);
   background-attachment: fixed;
   background-size: cover;
@@ -113,16 +114,17 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  top: 6%;
+  top: 0;
   max-width: 88vw;
   margin: 0 auto;
+  z-index: 444;
 }
 nav {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
 }
 .nav-logo {
   display: flex;
@@ -165,6 +167,9 @@ nav {
 .nav-active {
   color: var(--blue-one) !important;
 }
+.nav-links a:hover {
+  color: var(--blue-two);
+}
 .nav-cta:link,
 .nav-cta:visited {
   text-decoration: none;
@@ -196,6 +201,64 @@ nav {
 .nav-toggle.nav-links {
   left: 10%;
 }
+/************************/
+/* HERO SECTION STYLES */
+/**********************/
+.hero-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-h2 {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+.hero-h4 {
+  opacity: 0.7;
+  font-weight: 600;
+}
+.first-hero-btn:link,
+.first-hero-btn:visited {
+  background-color: var(--blue-one);
+  color: var(--light-one) !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 16px !important;
+  transition: all 0.4s ease-in-out;
+}
+.first-hero-btn:hover,
+.first-hero-btn:active {
+  background-color: var(--blue-three);
+}
+.second-hero-btn:link,
+.second-hero-btn:visited {
+  color: var(--light-one) !important;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.hero-play-icon {
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.second-hero-btn:hover .hero-play-icon,
+.second-hero-btn:active .hero-play-icon {
+  color: var(--blue-one);
+}
+.hero-img {
+  animation: upDown 5s ease-in-out infinite alternate-reverse;
+}
+@keyframes upDown {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+/*********************/
+/********************/
+/*******************/
 /******************/
 /* MEDIA SCREENS */
 /****************/
@@ -208,7 +271,7 @@ nav {
     align-items: center;
     gap: 12px;
     position: fixed;
-    background: rgba(132, 132, 132, 0.16);
+    background: rgba(51, 98, 160, 0.95);
     color: var(--main-three) !important;
     border-radius: 8px;
     left: 1000px;
@@ -216,6 +279,15 @@ nav {
     padding: 1.8rem 0;
     top: 20%;
     z-index: 999;
+  }
+  .hero-row {
+    margin-top: 4.5rem;
+  }
+  .hero-h2 {
+    font-size: 2.4rem;
+  }
+  .hero-first-col {
+    margin-bottom: 3rem;
   }
 }
 /* 576 */

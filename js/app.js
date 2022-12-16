@@ -20,3 +20,13 @@ $(window).on("load", function () {
   $(".preloader-dots").delay(2600).fadeOut();
   $(".preloader").delay(2800).fadeOut();
 });
+//
+/*==============*/
+/*TYPED JS CODE*/
+/*============*/
+let typed = new Typed(".hero-typed", {
+  strings: ["", "Business", "Brand"],
+  backSpeed: "9",
+  typeSpeed: "9",
+  loop: true,
+});
