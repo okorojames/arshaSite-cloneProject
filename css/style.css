@@ -37,6 +37,7 @@
   }
 }
 .form-control:focus,
+.accordion-button:focus,
 textarea:focus,
 input,
 input:focus {
@@ -382,6 +383,38 @@ nav {
 .about-btn:active {
   background: var(--blue-two) !important;
   color: var(--light-three) !important;
+}
+/******************/
+/* OFFSEC ONE  */
+/****************/
+#offsection-one {
+  margin-top: 3rem;
+  background: var(--light-three);
+  padding: 3rem;
+}
+.offsec-one-col-two {
+  animation: upDown 5s ease-in-out infinite alternate-reverse;
+}
+.offsec-one-h2 {
+  color: var(--main-three);
+}
+.offsec-one-bolder-h2 {
+  font-weight: 700;
+}
+.offsec-accord-one-flex {
+  font-weight: 600;
+  color: var(--blue-two);
+}
+.off-sec-accord-number {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.offsec-one-accord-item {
+  outline: none !important;
+  border: 0;
+}
+.accordion-button:focus {
+  background-color: var(--light-one) !important;
 }
 /*********************/
 /********************/
