@@ -151,7 +151,7 @@ nav {
 .hamburger {
   display: none;
   cursor: pointer;
-  margin-left: 200px;
+  margin-left: 130px;
   transition: all 0.3s ease-in-out;
 }
 .hamburger div {
