@@ -54,8 +54,6 @@ dropLink.addEventListener("mouseleave", function () {
 const navWrap = document.querySelector(".nav-wrap");
 window.onscroll = function () {
   scrollFunction();
-  zoomFunction();
-  zoomAbout();
 };
 
 function scrollFunction() {
@@ -65,19 +63,5 @@ function scrollFunction() {
     navWrap.style.paddingLeft = "3rem";
   } else {
     navWrap.style.backgroundColor = "transparent";
-  }
-}
-function zoomFunction() {
-  if (document.body.scrollTop > 80) {
-    logoZoom.classList.add("zoom-up");
-  } else {
-    logoZoom.classList.remove("zoom-up");
-  }
-}
-function zoomAbout() {
-  if (document.body.scrollTop > 300) {
-    aboutCont.classList.add("anime-about");
-  } else {
-    aboutCont.classList.remove("anime-about");
   }
 }
