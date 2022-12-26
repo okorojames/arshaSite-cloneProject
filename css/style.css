@@ -490,10 +490,24 @@ nav {
   margin-bottom: 1.5rem;
 }
 .section-first-paragraph {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   letter-spacing: 1.18px;
   opacity: 0.9;
+}
+.service-card {
+  width: 18rem;
+  padding: 1rem 2rem;
+}
+.service-card-icon {
+  color: var(--blue-two);
+  font-size: 2.4rem;
+}
+.service-card-h4 {
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--blue-three);
 }
 /*********************/
 /********************/
