@@ -497,7 +497,11 @@ nav {
 }
 .service-card {
   width: 18rem;
-  padding: 1rem 2rem;
+  padding: 2.5rem 2rem;
+  transition: all 0.6s ease-in-out;
+}
+.service-card:hover {
+  transform: translateY(-15px);
 }
 .service-card-icon {
   color: var(--blue-two);
@@ -507,6 +511,10 @@ nav {
   margin-top: 0.8rem;
   margin-bottom: 1rem;
   font-weight: 600;
+  color: var(--main-three);
+  transition: all 0.5s ease-in-out;
+}
+.service-card:hover .service-card-h4 {
   color: var(--blue-three);
 }
 /*********************/
