@@ -523,8 +523,38 @@ nav {
 /******************/
 /* CTN SECTION */
 /****************/
-#ctn-section {
+#cta-section {
   margin-top: 6rem;
+  background: linear-gradient(rgba(40, 58, 90, 0.88), rgba(40, 58, 90, 0.88)),
+    url(/images/cta-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 8rem 0;
+}
+.cta-flex-item-one {
+  color: var(--light-one);
+}
+.cta-h3 {
+  font-weight: 700;
+}
+.cta-btn:link,
+.cta-btn:visited {
+  text-decoration: none;
+  font-size: 1rem;
+  background: transparent;
+  box-shadow: 0 0 0 0.2rem var(--light-one);
+  color: var(--light-one);
+  padding: 0.8rem 1.6rem;
+  border-radius: 1.2rem;
+  transition: all 0.4s ease-in-out;
+}
+.cta-btn:hover,
+.cta-btn:active {
+  box-shadow: none;
+  background-color: var(--main-three);
+  color: var(--light-one);
 }
 /*********************/
 /********************/
