@@ -533,6 +533,13 @@ nav {
   background-attachment: fixed;
   padding: 8rem 0;
 }
+.cta-row {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 .cta-flex-item-one {
   color: var(--light-one);
 }
@@ -541,10 +548,11 @@ nav {
 }
 .cta-btn:link,
 .cta-btn:visited {
+  display: inline-block;
   text-decoration: none;
   font-size: 1rem;
   background: transparent;
-  box-shadow: 0 0 0 0.2rem var(--light-one);
+  box-shadow: 0 0 0 0.15rem var(--light-one);
   color: var(--light-one);
   padding: 0.8rem 1.6rem;
   border-radius: 1.2rem;
