@@ -520,6 +520,12 @@ nav {
 .service-card:hover .service-card-h4 {
   color: var(--blue-three);
 }
+/******************/
+/* CTN SECTION */
+/****************/
+#ctn-section {
+  margin-top: 6rem;
+}
 /*********************/
 /********************/
 /*******************/
