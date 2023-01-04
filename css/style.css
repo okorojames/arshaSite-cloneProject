@@ -538,7 +538,8 @@ nav {
   justify-content: space-between;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
+  flex-wrap: wrap;
 }
 .cta-flex-item-one {
   color: var(--light-one);
