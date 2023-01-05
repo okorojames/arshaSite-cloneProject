@@ -65,3 +65,15 @@ function scrollFunction() {
     navWrap.style.backgroundColor = "transparent";
   }
 }
+
+//
+//
+const portfolioBtn = document.querySelectorAll(".portfolio-btn");
+portfolioBtn.forEach((portfoliobtn) => {
+  portfoliobtn.addEventListener("click", function () {
+    portfolioBtn.forEach((portbtn) => {
+      portbtn.classList.remove("port-btn-active");
+    });
+    portfoliobtn.classList.add("port-btn-active");
+  });
+});

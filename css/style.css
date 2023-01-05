@@ -597,6 +597,10 @@ nav {
   padding: 0.4rem 1rem;
   border-radius: 2rem;
 }
+.portfolio-btn:hover {
+  background: var(--blue-three);
+  color: var(--light-one);
+}
 .port-btn-active {
   background: var(--blue-three);
   color: var(--light-one);
