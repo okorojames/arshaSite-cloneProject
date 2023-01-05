@@ -580,6 +580,27 @@ nav {
   font-weight: 500;
   opacity: 0.8;
 }
+.portfolio-btns {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.portfolio-btn {
+  background: transparent;
+  color: #212529;
+  font-weight: 600;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  transition: all 0.6s ease-in-out;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+}
+.port-btn-active {
+  background: var(--blue-three);
+  color: var(--light-one);
+}
 /*********************/
 /********************/
 /*******************/
