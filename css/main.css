@@ -52,6 +52,9 @@ body {
   overflow-x: hidden !important;
   margin-bottom: 8%;
 }
+img{
+  width: 100%;
+}
 /**************/
 /* PRELOADER */
 /************/
@@ -606,6 +609,60 @@ nav {
 .port-btn-active {
   background: var(--blue-three);
   color: var(--light-one);
+}
+/* portfolio cards styling */
+.portfolio-card--holder{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 7vh);
+}
+.portfolio-card-item{
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-card-item-one{
+   height: 400px;
+}
+.portfolio-card-item:hover .portfolio-image-overlay{
+  display: flex;
+}
+.portfolio-card-item:hover .portfolio-card-image{
+  transform: scale(1.15);
+}
+.portfolio-image-overlay{
+  position: absolute;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--main-two);
+  color: var(--light-one);
+  padding: .6rem .3rem;
+}
+.port-img-overlay-p-one{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.port-img-overlay-p-two,.port-img-overlay-p-four,.port-img-overlay-p-three{
+  margin-bottom: 0;
+}
+.port-img-overlay-two{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+.port-img-overlay-two i{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.portfolio-card-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .5s ease-in-out;
 }
 /*********************/
 /********************/
