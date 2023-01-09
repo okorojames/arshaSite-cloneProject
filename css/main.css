@@ -582,6 +582,7 @@ nav {
 }
 .portfolio-btns {
   margin-top: 3rem;
+  margin-bottom:5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
