@@ -317,7 +317,7 @@ nav {
   background: var(--light-four);
 }
 #logo-swipe .container {
-  flex-wrap: wrap !important;
+  /* flex-wrap: wrap; */
 }
 .zoom-up.logo-swipe-container {
   animation: zoom-in-up 2s ease-in-out;
