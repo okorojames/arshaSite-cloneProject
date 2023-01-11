@@ -615,16 +615,27 @@ nav {
 /* portfolio cards styling */
 .portfolio-card--holder{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(10, 7vh);
+  gap: 2.3rem;
 }
 .portfolio-card-item{
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
-.portfolio-card-item-one{
+/* .portfolio-card-item-one{
    height: 400px;
 }
+.portfolio-card-item-two{
+  height: 250px;
+}
+.portfolio-card-item-three{
+  height: 200px;
+}
+.portfolio-card-item-four{
+  grid-row: 5 / span 3;
+} */
 .portfolio-card-item:hover .portfolio-image-overlay{
   display: flex;
 }
